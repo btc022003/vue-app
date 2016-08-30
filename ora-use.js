@@ -9,10 +9,10 @@ const ora = require('ora');
 const spinner = ora('加载中...').start();
 
 setTimeout(() => {
-    spinner.color = 'yellow';
-    spinner.text = '加载完成';
+  spinner.color = 'yellow';
+  spinner.text = '加载完成';
 }, 1000);
 
-setTimeout(()=>{
+setTimeout(() => {
   spinner.succeed();
-},2000)
+}, 2000)

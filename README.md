@@ -38,4 +38,7 @@ vue.js使用记录
 使用vue cli,快速搭建基于webpack的应用
 使用vue-router组织代码
 
+webpack的配置文件在build文件夹下面
+  webpack.base.conf.js  基础配置文件,其他的配置都是在此基础上进行文件合并获得的
+
 ```

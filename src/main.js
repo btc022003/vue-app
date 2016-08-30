@@ -1,7 +1,9 @@
-import Vue from 'vue';
+import Vue from 'vue'
 // import App from './views/App';
-import VueRouter from 'vue-router';
-import routerMap from './routers';  //引入路由
+import VueRouter from 'vue-router'
+
+//引入路由
+import routerMap from './routers'
 
 Vue.use(VueRouter);
 

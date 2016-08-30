@@ -1,12 +1,14 @@
 <template lang="html">
   <h1>{{txt}}</h1>
+  <h2>{{name}}</h2>
 </template>
 
 <script>
 export default {
   data() {
     return {
-      txt:'about me'
+      txt:'about me',
+      name:''
     };
   },
   route:{
@@ -16,6 +18,7 @@ export default {
       // transition.to.query  url传统方式传递的参数
       console.dir(transition);
       console.dir(transition.to.query);
+      this.name = transition.to.query.name;
     }
   },
   computed: {},

@@ -6,6 +6,9 @@
       Welcome to your Vue.js app!
     </p>
     <p>
+      <a href="#/about?id=123&name=tom">关于我</a>
+    </p>
+    <p>
       To get a better understanding of how this boilerplate works, check out
       <a href="http://vuejs-templates.github.io/webpack" target="_blank">its documentation</a>.
       It is also recommended to go through the docs for

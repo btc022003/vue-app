@@ -12,6 +12,9 @@ import VueResource from 'vue-resource'
 Vue.use(VueResource);
 Vue.http.options.emulateJSON = true;
 Vue.http.options.emulateHTTP = true;
+// Vue.http.options.headers={
+//     'Content-Type':'application/x-www-form-urlencoded; charset=UTF-8'
+// };
 
 Vue.use(VueRouter);
 

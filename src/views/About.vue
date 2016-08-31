@@ -24,17 +24,29 @@ export default {
   computed: {},
   ready() {
     // console.log(this.$http);
+    // get
     this.$http.get('http://lixuanqi.com/api/v1/address/get_data.json').then((res)=>{
       console.dir(res.data);
     }).catch((err)=>{
       console.dir(err);
     });
 
+    post
     this.$http.post('http://localhost:3000/home',{name:"tom"}).then((res)=>{
       console.dir(res);
     }).catch((err)=>{
       console.dir(err);
     });
+
+    /**
+     * get post可用
+     * 但是put、delete均不能使用 ...暂时没找到问题
+     */
+    // this.$http.put('http://localhost:3000/home/1',{age:18},{method:"PUT"}).then((res)=>{
+    //   console.log(res);
+    // },(err)=>{
+    //   console.log(err);
+    // });
 
     console.log('ready');
   },

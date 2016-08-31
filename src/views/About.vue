@@ -22,8 +22,25 @@ export default {
     }
   },
   computed: {},
-  ready() {},
-  attached() {},
+  ready() {
+    // console.log(this.$http);
+    this.$http.get('http://lixuanqi.com/api/v1/address/get_data.json').then((res)=>{
+      console.dir(res.data);
+    }).catch((err)=>{
+      console.dir(err);
+    });
+
+    this.$http.post('http://localhost:3000/home',{name:"tom"}).then((res)=>{
+      console.dir(res);
+    }).catch((err)=>{
+      console.dir(err);
+    });
+
+    console.log('ready');
+  },
+  attached() {
+    console.log('attached');
+  },
   methods: {},
   components: {}
 };

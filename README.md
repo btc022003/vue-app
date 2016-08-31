@@ -41,4 +41,17 @@ vue.js使用记录
 webpack的配置文件在build文件夹下面
   webpack.base.conf.js  基础配置文件,其他的配置都是在此基础上进行文件合并获得的
 
+使用vue-resource模块做http请求
+  npm install vue-resource --save
+
+```
+
+
+#### ora模块
+
+> 为了好玩,试了下ora这个模块。在nodejs的控制台中创建一个loading的小图标
+
+```bash
+# 使用的例子在
+node ora-use
 ```

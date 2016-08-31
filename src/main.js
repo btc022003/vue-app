@@ -5,6 +5,14 @@ import VueRouter from 'vue-router'
 //引入路由
 import routerMap from './routers'
 
+import VueResource from 'vue-resource'
+
+// 引入vue-resource, http client功能
+
+Vue.use(VueResource);
+Vue.http.options.emulateJSON = true;
+Vue.http.options.emulateHTTP = true;
+
 Vue.use(VueRouter);
 
 /* eslint-disable no-new */

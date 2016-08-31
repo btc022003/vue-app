@@ -31,7 +31,7 @@ export default {
       console.dir(err);
     });
 
-    post
+    // post
     this.$http.post('http://localhost:3000/home',{name:"tom"}).then((res)=>{
       console.dir(res);
     }).catch((err)=>{

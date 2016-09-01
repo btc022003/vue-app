@@ -15,6 +15,8 @@ Vue.http.options.emulateHTTP = true;
 
 console.log(Vue.http.options.emulateHTTP)
 
+console.log($.fn.jquery);
+
 // Vue.http.options.headers={
 //     'Content-Type':'application/x-www-form-urlencoded; charset=UTF-8'
 // };

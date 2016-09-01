@@ -44,6 +44,7 @@ webpack的配置文件在build文件夹下面
 使用vue-resource模块做http请求
   npm install vue-resource --save
 
+通过配置webpack.base.conf.js文件 加入全局jquery插件的引入
 ```
 
 
